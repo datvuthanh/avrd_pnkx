@@ -21,19 +21,41 @@ document.addEventListener('keydown', event => {
   }
 });
 
+const resetVideoPlayers = new Map();
+function wirePosterFallback(shell) {
+  const poster = shell.querySelector('.video-poster');
+  if (!poster) return;
+  poster.addEventListener('error', () => { poster.hidden = true; }, { once: true });
+  if (poster.complete && poster.naturalWidth === 0) poster.hidden = true;
+}
 document.querySelectorAll('.video-shell').forEach(shell => {
-  shell.querySelector('.video-play').addEventListener('click', () => {
-    const frame = document.createElement('iframe');
-    const id = encodeURIComponent(shell.dataset.videoId);
-    frame.src = shell.dataset.player === 'youtube'
-      ? `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`
-      : `https://drive.google.com/file/d/${id}/preview`;
-    frame.title = shell.dataset.title;
-    frame.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
-    frame.referrerPolicy = 'strict-origin-when-cross-origin';
-    frame.allowFullscreen = true;
-    shell.replaceChildren(frame);
-    frame.focus();
+  const originalNodes = [...shell.childNodes].map(node => node.cloneNode(true));
+  function bindPlay() {
+    wirePosterFallback(shell);
+    shell.querySelector('.video-play').addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+      const id = encodeURIComponent(shell.dataset.videoId);
+      frame.src = shell.dataset.player === 'youtube'
+        ? `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`
+        : `https://drive.google.com/file/d/${id}/preview`;
+      frame.title = shell.dataset.title;
+      frame.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      frame.allowFullscreen = true;
+      shell.replaceChildren(frame);
+      frame.focus();
+    }, { once: true });
+  }
+  resetVideoPlayers.set(shell, () => {
+    if (!shell.querySelector('iframe')) return;
+    shell.replaceChildren(...originalNodes.map(node => node.cloneNode(true)));
+    bindPlay();
+  });
+  bindPlay();
+});
+document.querySelectorAll('.media-details').forEach(details => {
+  details.addEventListener('toggle', () => {
+    if (!details.open) details.querySelectorAll('.video-shell').forEach(shell => resetVideoPlayers.get(shell)?.());
   });
 });
 
@@ -53,3 +75,4 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-15% 0px -65% 0px' });
   document.querySelectorAll('section[id]').forEach(section => observer.observe(section));
 }
+

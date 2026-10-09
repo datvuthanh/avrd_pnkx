@@ -1,6 +1,6 @@
 # Dolphin — Autonomous Driving Research at Phenikaa-X
 
-Static project page for the Autonomous Driving Research Department.
+Static project page for the Autonomous Vehicle Research Department.
 
 Published at: https://datvuthanh.github.io/avrd_pnkx/
 
@@ -15,7 +15,7 @@ No build step or package installation is required. GitHub Pages serves the root 
 
 ## Video access
 
-The E2E video is hosted on Google Drive. Its sharing setting must allow the intended audience to view it. Data visualization and the VTV feature link to YouTube. Video hosting remains with those services; this repository does not include the video files.
+The E2E video is hosted on Google Drive. Its sharing setting must allow the intended audience to view it. Data visualization, Ocean Park AV, VTV and Hanoi TV videos link to YouTube. Video hosting remains with those services; this repository does not include the video files.
 
 ## Research status
 
@@ -24,3 +24,7 @@ E2E driving is an on-vehicle proof of concept. VLA integration and the proposed 
 ## Contact
 
 The page identifies the project lead and links to the official company website. Add an approved business email when available.
+
+## v1.1
+
+Updated department name, five videos, source-faithful surround-view image with connection settings removed, broader scene reconstruction research, and a shorter Contact us section.
