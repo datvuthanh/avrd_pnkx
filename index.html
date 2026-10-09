@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10204d">
+  <meta name="description" content="Dolphin is Phenikaa-X's camera-based autonomous driving research programme. Explore our driving demonstrations, data workflow, research platform and collaboration interests.">
+  <title>Dolphin | Autonomous Driving Research at Phenikaa-X</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Dolphin home"><img src="assets/phenikaa-x.png" alt="Phenikaa-X" width="145" height="31"><span class="brand-divider"></span><span>DOLPHIN</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">+</span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#demonstrations">Demos</a><a href="#platform">Platform</a><a href="#research">Research</a><a href="#team">Team</a><a class="nav-contact" href="#collaboration">Collaborate</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="accent-line"></span> AUTONOMOUS DRIVING RESEARCH</p>
+        <h1 id="hero-title">Dolphin<span class="hero-subtitle">Camera-based<br>autonomous driving.</span></h1>
+        <p class="hero-description">From driving data to on-vehicle experiments. We develop end-to-end driving systems and explore how reasoning, simulation and efficient learning can improve their performance.</p>
+        <div class="button-row"><a class="button button-primary" href="#demonstrations"><span class="play-small" aria-hidden="true"></span>Watch demonstrations</a><a class="button button-secondary" href="assets/Dolphin_Research_Overview.pdf" target="_blank" rel="noopener">Overview PDF <span class="file-label">PDF</span></a></div>
+        <p class="hero-affiliation">Autonomous Driving Research Department<br><strong>Phenikaa-X · Vietnam</strong></p>
+      </div>
+      <figure class="hero-figure">
+        <div class="hero-image"><img src="assets/dolphin-vehicle.webp" alt="Phenikaa-X research vehicle equipped for autonomous driving development" width="1034" height="647" fetchpriority="high"><span class="image-tag">THE RESEARCH PLATFORM</span></div>
+        <figcaption><span>Built around real vehicles and driving data.</span><span>01 / DOLPHIN</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="status-strip">
+      <div class="section-wrap status-grid"><div><span class="status-label">CURRENT DEVELOPMENT</span><strong>E2E on-vehicle proof of concept</strong></div><div><span class="status-label">RESEARCH IN PROGRESS</span><strong>VLA reasoning &amp; closed-loop evaluation</strong></div><div><span class="status-label">OUR FOCUS</span><strong>Research with a path to deployment</strong></div></div>
+    </div>
+
+    <section class="section-wrap section-space" id="demonstrations" aria-labelledby="demo-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / DEMONSTRATIONS</p><h2 id="demo-title">See the work in motion.</h2></div><p>Selected demonstrations from our vehicle and data development work.</p></div>
+      <div class="demo-grid">
+        <article class="demo-card demo-featured">
+          <div class="video-shell" data-player="drive" data-video-id="18eExbcP9S-lfnrtQd3KHUaM_DdBuKN5o" data-title="Dolphin end-to-end driving demonstration">
+            <img src="assets/dolphin-vehicle.webp" alt="Phenikaa-X vehicle; select play to view the E2E demonstration" width="1034" height="647" loading="lazy">
+            <button class="video-play" aria-label="Play E2E driving demonstration"><span class="play-circle" aria-hidden="true">▶</span><span>Watch E2E demo</span></button>
+            <span class="video-badge">ON-VEHICLE POC</span>
+          </div>
+          <div class="demo-caption"><div><span class="caption-number">01</span><h3>End-to-end driving</h3><p>Our on-vehicle E2E proof of concept. Ongoing development and evaluation across driving scenarios.</p></div><a class="text-link" href="https://drive.google.com/file/d/18eExbcP9S-lfnrtQd3KHUaM_DdBuKN5o/view" target="_blank" rel="noopener">Open video</a></div>
+        </article>
+        <div class="demo-secondary">
+          <article class="demo-card">
+            <div class="video-shell" data-player="youtube" data-video-id="dBEhfQIUVrE" data-title="Dolphin data visualization platform">
+              <img src="assets/data-workflow.webp" alt="Multi-camera views and annotations in the Dolphin data visualization platform" width="1600" height="540" loading="lazy">
+              <button class="video-play" aria-label="Play data visualization demonstration"><span class="play-circle" aria-hidden="true">▶</span><span>Watch data workflow</span></button><span class="video-badge">DATA PLATFORM</span>
+            </div>
+            <div class="demo-caption"><div><span class="caption-number">02</span><h3>Data visualization &amp; workflow</h3><p>Inspect synchronized driving data and annotations.</p></div><a class="text-link" href="https://www.youtube.com/watch?v=dBEhfQIUVrE" target="_blank" rel="noopener">Open video</a></div>
+          </article>
+          <article class="report-card"><img src="assets/dolphin-report.webp" width="320" height="180" loading="lazy" alt="A frame from the Dolphin VTV feature"><div><span class="small-label">PROJECT FEATURE</span><h3>Dolphin on VTV</h3><p>A closer look at the vehicle and the project.</p><a class="text-link" href="https://www.youtube.com/watch?v=hW6pWV2EDP8" target="_blank" rel="noopener">Watch feature</a></div></article>
+        </div>
+      </div>
+      <p class="section-note">Demonstrations illustrate specific development activities. The E2E system is at proof-of-concept stage; VLA integration is early research, with shadow-mode evaluation planned.</p>
+    </section>
+
+    <section class="platform-section" id="platform" aria-labelledby="platform-title">
+      <div class="section-wrap section-space">
+        <div class="section-heading"><div><p class="eyebrow">02 / THE RESEARCH PLATFORM</p><h2 id="platform-title">A complete experimental workflow.</h2></div><p>Our team connects data preparation, model development, vehicle integration and evaluation.</p></div>
+        <div class="platform-layout">
+          <figure class="platform-figure"><img src="assets/perception.webp" width="1501" height="1000" alt="Examples of multi-camera driving data, object annotations and scene understanding" loading="lazy"><figcaption>Driving data and scene understanding from our development workflow.</figcaption></figure>
+          <div class="capability-list">
+            <article><span>01</span><div><h3>Data collection &amp; curation</h3><p>Multi-sensor capture, calibration, timestamp alignment, semi-automatic annotation and data visualization.</p></div></article>
+            <article><span>02</span><div><h3>Driving models</h3><p>Perception, prediction and planning, progressing toward E2E driving with temporal context and VLA guidance.</p></div></article>
+            <article><span>03</span><div><h3>Real-time integration</h3><p>The PhenikaaX Drive Platform and vehicle integration support efficient communication and on-vehicle execution.</p></div></article>
+            <article><span>04</span><div><h3>Simulation &amp; evaluation</h3><p>HD-map-based and camera-based simulation development, closed-loop evaluation and controlled vehicle tests.</p></div></article>
+          </div>
+        </div>
+        <div class="workflow" aria-label="Research workflow"><span>Collect</span><i aria-hidden="true">›</i><span>Curate &amp; label</span><i aria-hidden="true">›</i><span>Train</span><i aria-hidden="true">›</i><span>Simulate &amp; test</span><i aria-hidden="true">›</i><span>Vehicle evaluation</span><i aria-hidden="true">›</i><span>Learn from new cases</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-space architecture-section" aria-labelledby="architecture-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / SYSTEM DIRECTION</p><h2 id="architecture-title">Fast driving.<br>Context-aware reasoning.</h2></div><p>We are exploring an asynchronous VLA reasoning module alongside the E2E driving system, with arbitration between guidance and vehicle control.</p></div>
+      <div class="architecture" role="img" aria-label="Proposed dual-system architecture. Camera, radar and navigation inputs feed a fast E2E system with temporal memory and scene queries. An asynchronous VLA system provides meta-action guidance. Arbitration and a safety layer connect to vehicle control. E2E is a proof of concept and VLA is early research.">
+        <div class="arch-input"><span class="small-label">VEHICLE INPUTS</span><h3>Driving context</h3><p>8 cameras<br>Long-range radar<br>Navigation</p></div>
+        <div class="arch-models">
+          <div class="arch-fast"><div class="arch-title"><span class="small-label">FAST SYSTEM</span><span class="status-pill">E2E · on-vehicle PoC</span></div><h3>End-to-end driving</h3><div class="arch-chain"><span>Visual backbone</span><b>›</b><span>Temporal memory</span><b>›</b><span>Scene queries &amp; decoder</span></div></div>
+          <div class="arch-slow"><div class="arch-title"><span class="small-label">SLOW SYSTEM</span><span class="status-pill">VLA · early research</span></div><h3>Language-grounded reasoning</h3><p>Streaming video, memory and decision meta-actions</p><span class="guidance-label">Asynchronous guidance to the fast system</span></div>
+        </div>
+        <div class="arch-output"><span class="small-label">EXECUTION</span><h3>Arbitration<br>&amp; safety layer</h3><div class="output-line"></div><strong>Vehicle control</strong></div>
+      </div>
+      <div class="architecture-footer"><span>Proposed dual-system architecture</span><span>Research to pilot in 2027</span></div>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-title">
+      <div class="section-wrap section-space">
+        <div class="section-heading"><div><p class="eyebrow">04 / RESEARCH DIRECTIONS</p><h2 id="research-title">Scientific questions.<br>Driving applications.</h2></div><p>Selected ongoing and planned directions. We welcome discussion of related topics and methods that can deliver a measurable benefit to autonomous driving.</p></div>
+        <div class="research-list">
+          <article><span class="research-number">01</span><div><h3>Efficient end-to-end driving</h3><p>Architectures and temporal representations that improve planning while meeting on-vehicle compute, latency and memory constraints.</p></div><span class="research-tag">MODELS &amp; DEPLOYMENT</span></article>
+          <article><span class="research-number">02</span><div><h3>Multimodal reasoning &amp; VLA</h3><p>Spatial and temporal reasoning, useful driving guidance, and datasets and benchmarks that connect model understanding to driving decisions.</p></div><span class="research-tag">REASONING &amp; EVALUATION</span></article>
+          <article><span class="research-number">03</span><div><h3>Data-efficient perception &amp; learning</h3><p>Data selection, learning with limited annotations, and model adaptation across traffic scenarios and operating conditions.</p></div><span class="research-tag">DATA &amp; PERCEPTION</span></article>
+          <article><span class="research-number">04</span><div><h3>4D reconstruction &amp; simulation</h3><p>Dynamic scene reconstruction, including Power Foam-based methods and Gaussian splatting, to support more accurate closed-loop evaluation.</p></div><span class="research-tag">SCENES &amp; SIMULATION</span></article>
+          <article><span class="research-number">05</span><div><h3>Learning better driving decisions</h3><p>Trajectory diversity, policy improvement from driving data, and methods that reduce dependence on dedicated simulation for fine-tuning.</p></div><span class="research-tag">PLANNING &amp; LEARNING</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-space" id="team" aria-labelledby="team-title">
+      <div class="section-heading"><div><p class="eyebrow">05 / PEOPLE &amp; ENGINEERING</p><h2 id="team-title">The team behind Dolphin.</h2></div><p>Research and implementation are supported by dedicated core teams and shared engineering groups.</p></div>
+      <div class="leadership">
+        <article><span class="person-role">COMPANY DIRECTOR</span><h3>Lê Anh Sơn</h3><p>Phenikaa-X</p></article>
+        <article><span class="person-role">PROJECT LEAD</span><h3>Vũ Thành Đạt</h3><p>Head, Autonomous Driving<br>Research Department</p></article>
+        <article><span class="person-role">PROJECT COORDINATOR</span><h3>Lý Hoàng Hiệp</h3><p>Dolphin</p></article>
+        <article><span class="person-role">PROJECT COORDINATOR</span><h3>Phạm Hoàng Sơn</h3><p>Dolphin</p></article>
+      </div>
+      <div class="team-details"><div><h3>Core research &amp; development</h3><div class="team-pills"><span>E2E / Perception</span><span>Reasoning / Planning</span><span>Sensing / System</span><span>Navigation</span><span>Localization</span><span>Control</span></div><p class="section-note">E2E / Perception and Reasoning / Planning would work most closely with research advisors.</p></div><div class="shared-team"><h3>Shared engineering support</h3><p>Mechatronics<br>Mechanical engineering<br>Web &amp; application development</p></div></div>
+    </section>
+
+    <section class="collaboration-section" id="collaboration" aria-labelledby="collaboration-title">
+      <div class="section-wrap section-space">
+        <p class="eyebrow">06 / RESEARCH COLLABORATION</p>
+        <div class="collaboration-heading"><h2 id="collaboration-title">Explore a research<br>direction with us.</h2><p>We welcome conversations with researchers and labs interested in autonomous driving. Together, we can connect methodological advances with driving data, engineering and evaluation.</p></div>
+        <div class="collaboration-options"><article><span>01</span><h3>Research advisory</h3><p>Discuss methods, architectures, experimental design and research challenges in projects already underway.</p></article><article><span>02</span><h3>Joint research</h3><p>Identify shared questions and develop methods, experiments and scientific contributions together.</p></article><article><span>03</span><h3>Research mentoring</h3><p>Strengthen evaluation, contribution framing and manuscript development, with scope agreed for each topic.</p></article></div>
+        <div class="contact-row"><div><span class="small-label">RESEARCH CONTACT</span><h3>Vũ Thành Đạt</h3><p>Head, Autonomous Driving Research Department<br>Dolphin Project Lead · Phenikaa-X</p></div><div class="contact-actions"><a class="button button-light" href="assets/Dolphin_Research_Overview.pdf" target="_blank" rel="noopener">Download research overview</a><a class="company-link" href="https://phenikaa-x.com/" target="_blank" rel="noopener">Visit Phenikaa-X</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap"><span>© 2026 Phenikaa-X. Dolphin research programme.</span><span>Autonomous Driving Research Department</span><a href="#top">Back to top</a></footer>
+</body>
+</html>
